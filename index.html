@@ -23,6 +23,10 @@
         .input-frame {
             margin-bottom: 20px;
         }
+        .input-frame img {
+            width: 50%;
+            height: auto;
+        }
         .videos {
             display: flex;
             flex-wrap: wrap;
@@ -36,42 +40,259 @@
             width: 100%;
             height: auto;
         }
+        .section {
+            margin-bottom: 40px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Video Comparison</h1>
-        <div class="input-frame">
-            <h2>Input Frame</h2>
-            <img src="/Users/czsmacbook/Desktop/html/frame_00001.png" alt="Input Frame">
-            <p>Prompt: Your prompt text here</p>
+        <h1>Model Comparisons</h1>
+        <div class="intro">
+            <p><strong>Model1:</strong> I2VGen-XL: High-Quality Image-to-Video Synthesis via Cascaded Diffusion Models</p>
+            <p><strong>Model2:</strong> TI2V-Zero: Zero-Shot Image Conditioning for Text-to-Video Diffusion Models</p>
+            <p><strong>Model3:</strong> Stable Video Diffusion: Scaling Latent Video Diffusion Models to Large Datasets</p>
+            <p><strong>Model4:</strong> PhysDreamer: Physics-Based Interaction with 3D Objects via Video Generation</p>
         </div>
-        <div class="videos">
-            <div class="video-wrapper">
-                <h3>Generated Video 1</h3>
-                <video controls>
-                    <source src="https://drive.google.com/uc?export=download&id=1hXUSAWaG5puA2HGffaqR-frODvAHcSbH" type="video/mp4">
-                </video>
+
+        <div class="section">
+            <div class="input-frame">
+                <h2>Input Frame 1</h2>
+                <img src="frame_00001.png" alt="Input Frame">
+                <p>Prompt1: “The leave of a plant is swaying”</p>
             </div>
-            <div class="video-wrapper">
-                <h3>Generated Video 2</h3>
-                <video controls>
-                    <source src="leave1.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="video-wrapper">
-                <h3>Generated Video 3</h3>
-                <video controls>
-                    <source src="/Users/czsmacbook/Desktop/html/leave1.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="video-wrapper">
-                <h3>Generated Video 4</h3>
-                <video controls>
-                    <source src="/Users/czsmacbook/Desktop/html/leave1.mp4" type="video/mp4">
-                </video>
+            <div class="videos">
+                <div class="video-wrapper">
+                    <h3>I2VGen-XL</h3>
+                    <video controls>
+                        <source src="video/leave1.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-wrapper">
+                    <h3>TI2V</h3>
+                    <video controls>
+                        <source src="video2/The_leave_of_a_plant_is_swaying.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-wrapper">
+                    <h3>SVD</h3>
+                    <video controls>
+                        <source src="video1/generated_leave.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-wrapper">
+                    <h3>PhysDreamer</h3>
+                    <video controls>
+                        <source src="video3/1.mp4" type="video/mp4">
+                    </video>
+                </div>
             </div>
         </div>
+
+        <div class="section">
+            <div class="input-frame">
+                <h2>Input Frame 1</h2>
+                <img src="frame_00001.png" alt="Input Frame">
+                <p>Prompt2: "The green leaf is swaying gently while the background remains still."</p>
+            </div>
+            <div class="videos">
+                <div class="video-wrapper">
+                    <h3>I2VGen-XL</h3>
+                    <video controls>
+                        <source src="video/leave3.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-wrapper">
+                    <h3>TI2V</h3>
+                    <video controls>
+                        <source src="video2/The_green_leaf_is_swaying_gently_while_the_background_remains_still.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-wrapper">
+                    <h3>SVD</h3>
+                    <video controls>
+                        <source src="video1/generated_leave.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-wrapper">
+                    <h3>PhysDreamer</h3>
+                    <video controls>
+                        <source src="video3/1.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="input-frame">
+                <h2>Input Frame 1</h2>
+                <img src="frame_00001.png" alt="Input Frame">
+                <p>Prompt3: “The leaf of a plant is swaying gently while the background remains still.”</p>
+            </div>
+            <div class="videos">
+                <div class="video-wrapper">
+                    <h3>I2VGen-XL</h3>
+                    <video controls>
+                        <source src="video/leave2.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-wrapper">
+                    <h3>TI2V</h3>
+                    <video controls>
+                        <source src="video2/The_leaf_of_a_plant_is_swaying_gently_while_the_background_remains_still.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-wrapper">
+                    <h3>SVD</h3>
+                    <video controls>
+                        <source src="video1/generated_leave.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-wrapper">
+                    <h3>PhysDreamer</h3>
+                    <video controls>
+                        <source src="video3/1.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="input-frame">
+                <h2>Input Frame 2</h2>
+                <img src="frame_00002.png" alt="Input Frame">
+                <p>Prompt1: "The flower is swaying gently."</p>
+            </div>
+            <div class="videos">
+                <div class="video-wrapper">
+                    <h3>I2VGen-XL</h3>
+                    <video controls>
+                        <source src="video/flower1.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-wrapper">
+                    <h3>TI2V</h3>
+                    <video controls>
+                        <source src="video2/The_flower_is_swaying_gently.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-wrapper">
+                    <h3>SVD</h3>
+                    <video controls>
+                        <source src="video1/generated_flower.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-wrapper">
+                    <h3>PhysDreamer</h3>
+                    <video controls>
+                        <source src="video3/2.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="input-frame">
+                <h2>Input Frame 2</h2>
+                <img src="frame_00002.png" alt="Input Frame">
+                <p>Prompt2: "The pink flower is swaying gently while the background remains still."</p>
+            </div>
+            <div class="videos">
+                <div class="video-wrapper">
+                    <h3>I2VGen-XL</h3>
+                    <video controls>
+                        <source src="video/flower2.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-wrapper">
+                    <h3>TI2V</h3>
+                    <video controls>
+                        <source src="video2/The_pink_flower_is_swaying_gently_while_the_background_remains_still.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-wrapper">
+                    <h3>SVD</h3>
+                    <video controls>
+                        <source src="video1/generated_flower.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-wrapper">
+                    <h3>PhysDreamer</h3>
+                    <video controls>
+                        <source src="video3/2.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="input-frame">
+                <h2>Input Frame 2</h2>
+                <img src="frame_00002.png" alt="Input Frame">
+                <p>Prompt3: "The pink leaf is swaying gently while the background remains still."</p>
+            </div>
+            <div class="videos">
+                <div class="video-wrapper">
+                    <h3>I2VGen-XL</h3>
+                    <video controls>
+                        <source src="video/flower3.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-wrapper">
+                    <h3>TI2V</h3>
+                    <video controls>
+                        <source src="video2/The_pink_leaf_is_swaying_gently_while_the_background_remains_still.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-wrapper">
+                    <h3>SVD</h3>
+                    <video controls>
+                        <source src="video1/generated_flower.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-wrapper">
+                    <h3>PhysDreamer</h3>
+                    <video controls>
+                        <source src="video3/2.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="input-frame">
+                <h2>Input Frame 3</h2>
+                <img src="frame_00003.png" alt="Input Frame">
+                <p>Prompt: “Two hands are withdrawing screw”</p>
+            </div>
+            <div class="videos">
+                <div class="video-wrapper">
+                    <h3>I2VGen-XL</h3>
+                    <video controls>
+                        <source src="video/hand.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-wrapper">
+                    <h3>TI2V</h3>
+                    <video controls>
+                        <source src="video2/Two_hands_are_withdrawing_screw.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-wrapper">
+                    <h3>SVD</h3>
+                    <video controls>
+                        <source src="video1/generated_hands.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-wrapper">
+                    <h3>Ground Truth</h3>
+                    <video controls>
+                        <source src="video3/3.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+
     </div>
 </body>
 </html>
